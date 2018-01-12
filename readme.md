@@ -1,6 +1,8 @@
 # Coffeebar Email Templates
 By Peter Laxalt 2018
+
 [www.laxaltandmciver.co](http://www.laxaltandmciver.co/)
+
 Simple structure for building email templates with Sass.
 
 ## Setup
