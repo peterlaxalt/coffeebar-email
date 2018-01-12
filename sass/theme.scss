@@ -1,0 +1,81 @@
+/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table{border-collapse:collapse !important;}
+body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+// palette
+$clr-white: #ffffff;
+$clr-sunshine: #F1CB2C;
+$clr-seashore: #8BE9E5;
+$clr-pinetree: #31AA49;
+$clr-drip: #380009;
+$clr-lioness: #DF6B1F;
+$clr-coffee: #604430;
+$clr-cream: #FCF6F2;
+$clr-blonde: #F5E8BB;
+$clr-nutmeg: #CBBEB6;
+
+// sizing
+$base:80px;
+$base-max-width: 550px;
+
+// typography
+$fnt-body:'Helvetica', 'Arial', 'Trebuchet', sans-serif;
+
+a, a:hover, a:visited, a:active, a:focus {
+	color:$clr-drip;
+	text-decoration:none;
+}
+
+// core wrapper
+
+body, #bodyTable {
+	/*@editable*/ background-color:$clr-cream;
+	color:$clr-drip;
+	font-family:$fnt-body;
+	font-size:14px;
+}
+
+#bodyCell {
+	/*@editable*/ border-top:4px solid $clr-lioness;
+	padding:$base $base/4;
+}
+
+#templateWrapper {
+	/*@editable*/ border:none;
+	max-width:$base-max-width;
+	width:100%;
+}
+
+// header
+#templateHeader {
+	background-color:$clr-white;
+	margin:0 auto;
+	width:100%;
+	.lmnt-col-left {
+		width:50%;
+		padding:$base/2 $base/4 $base/2 $base/2;
+	}
+	.lmnt-col-right {
+		width:50%;
+		text-align:right;
+		padding:$base/2 $base/2 $base/2 $base/4;
+		color:#604430;
+		span {
+			color:$clr-nutmeg;
+		}
+	}
+}
+
+// structure

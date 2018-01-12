@@ -1,0 +1,88 @@
+/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a {
+  padding: 0; }
+
+/* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody {
+  width: 100%; }
+
+.ExternalClass {
+  width: 100%; }
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%; }
+
+/* Force Hotmail to display normal line spacing */
+body, table, td, p, a, li, blockquote {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* Prevent WebKit and Windows mobile changing default text sizes */
+table, td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+/* Remove spacing between tables in Outlook 2007 and up */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* Allow smoother rendering of resized image in Internet Explorer */
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse !important; }
+
+body, #bodyTable, #bodyCell {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important; }
+
+/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+a, a:hover, a:visited, a:active, a:focus {
+  color: #380009;
+  text-decoration: none; }
+
+body, #bodyTable {
+  /*@editable*/
+  background-color: #FCF6F2;
+  color: #380009;
+  font-family: "Helvetica", "Arial", "Trebuchet", sans-serif;
+  font-size: 14px; }
+
+#bodyCell {
+  /*@editable*/
+  border-top: 4px solid #DF6B1F;
+  padding: 80px 20px; }
+
+#templateWrapper {
+  /*@editable*/
+  border: none;
+  max-width: 550px;
+  width: 100%; }
+
+#templateHeader {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 100%; }
+  #templateHeader .lmnt-col-left {
+    width: 50%;
+    padding: 40px 20px 40px 40px; }
+  #templateHeader .lmnt-col-right {
+    width: 50%;
+    text-align: right;
+    padding: 40px 40px 40px 20px;
+    color: #604430; }
+    #templateHeader .lmnt-col-right span {
+      color: #CBBEB6; }
