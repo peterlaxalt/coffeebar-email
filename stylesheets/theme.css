@@ -132,7 +132,7 @@ h1 {
   cursor: default; }
 
 p {
-  font-size: 17px;
+  font-size: 18px;
   color: #8C7C72;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -146,6 +146,16 @@ p {
   height: 1px;
   width: 100%;
   background-color: #CBBEB6; }
+
+.lmnt-break-small {
+  margin: 40px 0;
+  border: none;
+  height: 3px;
+  width: 50px;
+  background-color: #380009; }
+
+body, html {
+  background-color: #FCF6F2; }
 
 body, #bodyTable {
   /*@editable*/
@@ -168,6 +178,75 @@ body, #bodyTable {
   max-width: 550px;
   width: 100%;
   margin-top: 40px; }
+
+.lmnt-dir-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 80px 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 550px; }
+  .lmnt-dir-wrap .lmnt-dir-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px; }
+  .lmnt-dir-wrap .lmnt-dir-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .lmnt-dir-wrap .lmnt-dir-header .lmnt-dir-caption {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 16px; }
+    .lmnt-dir-wrap .lmnt-dir-header .lmnt-dir-title {
+      font-size: 45px;
+      font-weight: bold;
+      text-align: left;
+      color: #DF6B1F; }
+    .lmnt-dir-wrap .lmnt-dir-header p {
+      text-align: left;
+      padding-top: 20px; }
+  .lmnt-dir-wrap .lmnt-dir-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+    .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-head {
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      width: 100%;
+      padding: 20px;
+      border-bottom: 1px solid #CBBEB6; }
+    .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-row {
+      display: flex;
+      padding: 20px;
+      flex-direction: row;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 3px;
+      margin: 3px 0; }
+      .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-row .lmnt-dir-col-left {
+        color: #DF6B1F !important;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+      .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-row .lmnt-dir-col-right {
+        width: 50%; }
+      .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-row:hover {
+        background-color: #FCF6F2; }
+      .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-row a {
+        display: flex;
+        width: 100%; }
+    .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-col-left {
+      width: 50%; }
+    .lmnt-dir-wrap .lmnt-dir-table .lmnt-dir-col-right {
+      width: 50%; }
 
 .lmnt-col-left {
   width: 50%;

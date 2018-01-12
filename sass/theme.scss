@@ -122,7 +122,7 @@ h1 {
 }
 
 p {
-	font-size:17px;
+	font-size:18px;
 	color:$clr-tea;
 	-webkit-margin-before:0;
   -webkit-margin-after:0;
@@ -138,8 +138,19 @@ p {
 	width:100%;
 	background-color:$clr-nutmeg;
 }
+.lmnt-break-small {
+	margin:$base/2 0;
+	border:none;
+	height:3px;
+	width:50px;
+	background-color:$clr-drip;
+}
 
 // core structure
+
+body,html {
+	background-color:$clr-cream;
+}
 
 body, #bodyTable {
 	/*@editable*/ background-color:$clr-cream;
@@ -161,6 +172,92 @@ body, #bodyTable {
 	max-width:$base-max-width;
 	width:100%;
 	margin-top:$base/2;
+}
+
+// directory
+
+.lmnt-dir-wrap {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:$base $base/4 $base $base/4;
+	margin:0 auto;
+	width:100%;
+	max-width:550px;
+	.lmnt-dir-inner {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		background-color:$clr-white;
+		padding:$base/2;
+	}
+	.lmnt-dir-header {
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		.lmnt-dir-caption {
+			text-transform:uppercase;
+			letter-spacing:2px;
+			margin-top:$base/5;
+		}
+		.lmnt-dir-title {
+			font-size:45px;
+			font-weight:bold;
+			text-align:left;
+			color:$clr-lioness;
+		}
+		p {
+			text-align:left;
+			padding-top:$base/4;
+		}
+	}
+	.lmnt-dir-table {
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:row;
+		justify-content:space-between;
+		width:100%;
+		.lmnt-dir-head {
+			display:flex;
+			flex-direction:row;
+			font-weight:bold;
+			width:100%;
+			padding:$base/4;
+			border-bottom:1px solid $clr-nutmeg;
+		}
+		.lmnt-dir-row {
+			display:flex;
+			padding:$base/4;
+			flex-direction:row;
+			width:100%;
+			cursor:pointer;
+			border-radius:3px;
+			margin:3px 0;
+			.lmnt-dir-col-left {
+				color:$clr-lioness !important;
+				font-weight:bold;
+				display:flex;
+				justify-content:center;
+				flex-direction:column;
+			}
+			.lmnt-dir-col-right {
+				width:50%;
+			}
+			&:hover {
+				background-color:$clr-cream;
+			}
+			a {
+				display:flex;
+				width:100%;
+			}
+		}
+		.lmnt-dir-col-left {
+			width:50%;
+		}
+		.lmnt-dir-col-right {
+			width:50%;
+		}
+	}
 }
 
 // columns
